@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    font-size: 62.5%;
+}
 body {
     background-color: #BFD7E4;
     max-width: 750px;
@@ -31,20 +34,20 @@ header {
 }
 header h1 {
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 3.6rem;
     font-family: 'Staatliches', sans-serif;
     margin: 0 auto;
     font-weight: 400;
 }
 header p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     margin-bottom: 22px;
 }
 .legend-special-wrapper {
     font-family: 'Staatliches', sans-serif;
-    font-size: 24px;
+    font-size: 2.4rem;
     background-color: #F67669;
     text-align: center;
     padding: 50px 0;
@@ -52,7 +55,7 @@ header p {
     font-weight: 400;
     color: #fff;
     border-radius: 20px 20px 0px 0px;
-    margin-top: 27px;
+    margin-top: 29px;
 }
 form {
     display: flex;
@@ -90,19 +93,19 @@ input, select, textarea {
     border-radius: 8px;
 }
 label {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 24px;
     color: #4E4958;
 }
 label span {
     color: #84818a;
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-left: 9px;
 }
 .legend-wrapper {
     text-align: center;
     color: #253B51;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-family: 'Staatliches', sans-serif;
     text-transform: uppercase;
     font-weight: 400;
@@ -152,9 +155,40 @@ button {
     background: #F67669;
     border-radius: 8px;
     color: #fff;
-    font-size: 20px;
+    font-size: 2.0rem;
     padding: 12.5px 0;
     border: none;
     cursor: pointer;
     margin-top: 31px;
+}
+@media (max-width: 750px) {
+    body {
+        padding: 0 10px;
+    }
+    header {
+        text-align: center;
+        margin:107px auto 0;
+    }
+}
+@media (max-width: 550px) {
+    header {
+        width: auto;
+    }
+    form {
+        padding: 20px;
+    }
+    .input-fullname {
+        flex-direction: column;
+    }
+    .fulltime {
+        flex-direction: column;
+    }
+    footer {
+        padding: 5.2rem 3.1rem;
+    }
+}
+@media (max-width: 407px) {
+    .legend-special-wrapper {
+        margin-top: 5px;
+    }
 }
